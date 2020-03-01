@@ -1,4 +1,4 @@
-/* This program repeatedly converts Fahrenheit temperatures to Celcius and Kelvin.
+/* This program repeatedly converts Fahrenheit temperatures to Celsius and Kelvin.
  * User input is scanned and passed to the "temperatures" function, where the conversions take place.
  * This functionality executes on a loop, which is controlled by proxy of the "scanf" function:
  * The "scanf" function returns a value 0 or 1 depending on whether or not it successfully scanned a value.
@@ -28,14 +28,14 @@ int main(void){ //Declare main function
 	return 0; //Return 0 to main function
 }
 
-void temperatures(double tempFahr){ //Define temperatures funciton
+void temperatures(double tempFahr){ //Define temperatures function
 
 	//Define formulas for conversions
-	const double tempCelc = 5.0 / 9.0 * (tempFahr - 32.0);
-	const double tempKelv = tempCelc + 273.16;
+	const double tempCels = 5.0 / 9.0 * (tempFahr - 32.0);
+	const double tempKelv = tempCels + 273.16;
 
 	//Output results, formatted to 2 decimal places
-	printf("Fahrenheit: %.2lf\n", tempFahr);
-	printf("Celcius: %.2lf\n", tempCelc);
-	printf("Kelvin: %.2lf\n", tempKelv);
+	printf("Fahrenheit: \t\t%.2lf\n", tempFahr);
+	printf("Celsius: \t\t%.2lf\n", tempCels);
+	printf("Kelvin: \t\t%.2lf\n", tempKelv);
 }
